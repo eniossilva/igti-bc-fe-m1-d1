@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <title>Salaries</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="leftPanel">
+        <h1>Options</h1>
+        <div>
+          <div>
+            Sort by
+            <span id="select"> </span>
+          </div>
+        </div>
+
+        <div>
+          <fieldset id="rolesfs">
+            <legend>Filter by Roles</legend>
+          </fieldset>
+        </div>
+      </div>
+      <div class="result">
+        <h1>Employees (<span id="nrosEmp"></span>)</h1>
+        <table id="lista">
+          <thead>
+            <tr>
+              <td>ID</td>
+              <td>Name</td>
+              <td>Role</td>
+              <td>Salary</td>
+            </tr>
+          </thead>
+          <tbody id="corpoLista">
+            <tr>
+              <td>25</td>
+              <td>Joana da Silva</td>
+              <td>Administradora de Banco de Dados</td>
+              <td>13000</td>
+            </tr>
+            <tr>
+              <td>157</td>
+              <td>João da Silva</td>
+              <td>Analista de Requisitos</td>
+              <td>8500</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./data/db.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

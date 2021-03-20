@@ -1,0 +1,35 @@
+.main,
+.leftPanel,
+.result {
+  display: flex;
+}
+
+.leftPanel {
+  margin-left: 10%;
+  flex-grow: 1;
+}
+
+.result {
+  flex-grow: 2;
+  margin-right: 10%;
+}
+
+.leftPanel,
+.result {
+  flex-direction: column;
+  padding: 30px 0;
+}
+label {
+  margin: 5px;
+}
+label > input {
+  margin-right: 15px;
+}
+
+.leftPanel > div {
+  padding: 10px 0;
+}
+
+table {
+  width: 100%;
+}
